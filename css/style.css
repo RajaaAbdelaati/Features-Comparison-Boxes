@@ -108,6 +108,23 @@ ul {
   -o-transform: translate(-50% , -50%) rotate(-30deg);
   background-color: #FFF;
 }
+.question-mark {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #7e7e7e;
+  color: #FFF;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+}
 /* End Component */
 .container .discount-parent {
   width: 97%;
@@ -120,8 +137,8 @@ ul {
   }
 }
 .discount-parent p {
-  width: 140px;
-  height: 8px;
+  width: 145px;
+  height: 3px;
   margin: 20px 0px;
   border: 22px solid;
   color: #FFF;
@@ -184,4 +201,7 @@ ul {
 }
 .parent .box ul li p {
   font-size: 15px;
+}
+.active {
+  position: relative;
 }

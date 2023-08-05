@@ -1,0 +1,187 @@
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Open Sans';
+  background-color: #f6f6f6;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* Small */
+@media(min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media(min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media(min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+/* Start Component */
+.icone-true {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #009688;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+}
+.icone-true::before {
+  content: "";
+  width: 3px;
+  height: 8px;
+  border-right: 3px solid #FFF;
+  border-bottom: 3px solid #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%) rotate(45deg);
+  -webkit-transform: translate(-50% ,-50%) rotate(45deg);
+  -moz-transform: translate(-50% ,-50%) rotate(45deg);
+  -ms-transform: translate(-50% ,-50%) rotate(45deg);
+  -o-transform: translate(-50% ,-50%) rotate(45deg);
+}
+.icone-false {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #e91e63;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+}
+.icone-false::before {
+  content: "";
+  width: 2px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%) rotate(30deg);
+  -webkit-transform: translate(-50% , -50%) rotate(30deg);
+  -moz-transform: translate(-50% , -50%) rotate(30deg);
+  -ms-transform: translate(-50% , -50%) rotate(30deg);
+  -o-transform: translate(-50% , -50%) rotate(30deg);
+  background-color: #FFF;
+}
+.icone-false::after {
+  content: "";
+  width: 2px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%) rotate(-30deg);
+  -webkit-transform: translate(-50% , -50%) rotate(-30deg);
+  -moz-transform: translate(-50% , -50%) rotate(-30deg);
+  -ms-transform: translate(-50% , -50%) rotate(-30deg);
+  -o-transform: translate(-50% , -50%) rotate(-30deg);
+  background-color: #FFF;
+}
+/* End Component */
+.container .discount-parent {
+  width: 97%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 767px) {
+  .container .discount-parent {
+    justify-content: center;
+  }
+}
+.discount-parent p {
+  width: 140px;
+  height: 8px;
+  margin: 20px 0px;
+  border: 22px solid;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  border-color: #2196f3 transparent #2196f3 #2196f3;
+}
+.parent {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+@media (max-width: 767px) {
+  .parent {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.parent .box {
+  width: 530px;
+  margin-bottom: 40px;
+  background-color: #FFF;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+@media (max-width: 1199px) {
+  .parent .box {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 767px){
+  .parent .box {
+    margin-right: 0px;
+  }
+}
+.parent .box .basic-content h2,
+.parent .box .professional-content h2 {
+  padding: 17px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: normal;
+}
+.parent .box .basic-content h2 {
+  background-color: #f44336;
+}
+.parent .box .professional-content h2 {
+  background-color: #2196f3;
+}
+.parent .box ul li {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.parent .box ul li:not(:last-child) {
+  border-bottom: 1px solid #EEE;
+}
+.parent .box ul li p {
+  font-size: 15px;
+}
